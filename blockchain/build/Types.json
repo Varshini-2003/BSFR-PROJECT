@@ -1,0 +1,247 @@
+{
+  "contractName": "Types",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Types.sol\":\"Types\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Types.sol\":{\"keccak256\":\"0x624e8f1e24b04c3c71954735d32af099db6def79ab52fcb9212c58fbcff59034\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://e30e283b16e9e2e9b3ae6ea33176b8c46bc57913a24dc3f2251f9c0c28fb04cd\",\"dweb:/ipfs/QmYSUa7qV28uhhHyeYAvsWZwYwpVQFsQRjf9KHAQFfrMN3\"]}},\"version\":1}",
+  "bytecode": "0x60566050600b82828239805160001a6073146043577f4e487b7100000000000000000000000000000000000000000000000000000000600052600060045260246000fd5b30600052607381538281f3fe73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202d8c738b82054219dd3e3d4c9b6ca152387af7e088bc65774ca8f848afd1481464736f6c63430008150033",
+  "deployedBytecode": "0x73000000000000000000000000000000000000000030146080604052600080fdfea26469706673582212202d8c738b82054219dd3e3d4c9b6ca152387af7e088bc65774ca8f848afd1481464736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "62:244:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "62:244:1:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\n\r\nlibrary Types {\r\n    enum UserRole {\r\n\r\n        Admin, //0\r\n        User, //1\r\n        Hacker //2\r\n    }\r\n\r\n\r\n    struct UserDetails {\r\n        UserRole role;\r\n        address id_;\r\n        string name;\r\n        string email;\r\n    }\r\n\r\n\r\n   \r\n}",
+  "sourcePath": "C:\\Users\\student\\Desktop\\BSFR\\Ransomware-Detection\\blockchain\\contracts\\Types.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Types.sol",
+    "exportedSymbols": {
+      "Types": [
+        164
+      ]
+    },
+    "id": 165,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 149,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Types",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 164,
+        "linearizedBaseContracts": [
+          164
+        ],
+        "name": "Types",
+        "nameLocation": "70:5:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Types.UserRole",
+            "id": 153,
+            "members": [
+              {
+                "id": 150,
+                "name": "Admin",
+                "nameLocation": "110:5:1",
+                "nodeType": "EnumValue",
+                "src": "110:5:1"
+              },
+              {
+                "id": 151,
+                "name": "User",
+                "nameLocation": "130:4:1",
+                "nodeType": "EnumValue",
+                "src": "130:4:1"
+              },
+              {
+                "id": 152,
+                "name": "Hacker",
+                "nameLocation": "149:6:1",
+                "nodeType": "EnumValue",
+                "src": "149:6:1"
+              }
+            ],
+            "name": "UserRole",
+            "nameLocation": "88:8:1",
+            "nodeType": "EnumDefinition",
+            "src": "83:83:1"
+          },
+          {
+            "canonicalName": "Types.UserDetails",
+            "id": 163,
+            "members": [
+              {
+                "constant": false,
+                "id": 156,
+                "mutability": "mutable",
+                "name": "role",
+                "nameLocation": "215:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 163,
+                "src": "206:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_UserRole_$153",
+                  "typeString": "enum Types.UserRole"
+                },
+                "typeName": {
+                  "id": 155,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 154,
+                    "name": "UserRole",
+                    "nameLocations": [
+                      "206:8:1"
+                    ],
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 153,
+                    "src": "206:8:1"
+                  },
+                  "referencedDeclaration": 153,
+                  "src": "206:8:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_UserRole_$153",
+                    "typeString": "enum Types.UserRole"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 158,
+                "mutability": "mutable",
+                "name": "id_",
+                "nameLocation": "238:3:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 163,
+                "src": "230:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 157,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "230:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 160,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "259:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 163,
+                "src": "252:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 159,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "252:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 162,
+                "mutability": "mutable",
+                "name": "email",
+                "nameLocation": "281:5:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 163,
+                "src": "274:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 161,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "274:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "UserDetails",
+            "nameLocation": "183:11:1",
+            "nodeType": "StructDefinition",
+            "scope": 164,
+            "src": "176:118:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 165,
+        "src": "62:244:1",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "33:273:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xE8852358f8b01177b0232d4FdD3F3f0900F37eb8",
+      "transactionHash": "0xcaf23f1a4871226e9d74166954948916e37283668ecf64ff06d2f3e901c65399"
+    }
+  },
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2025-02-08T07:33:05.804Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

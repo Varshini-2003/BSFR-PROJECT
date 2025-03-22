@@ -1,0 +1,225 @@
+{
+  "contractName": "Types",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Types.sol\":\"Types\"},\"evmVersion\":\"shanghai\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Types.sol\":{\"keccak256\":\"0xe716863b4b65528fb171cdc5a60fe8e8c156692938433a292dd076b4dcfdbe44\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f0bd3a3aa1f1168f26b1224250813ee60f1fb7b73f8bc4d163154b311dd8ce92\",\"dweb:/ipfs/QmSeMb2J37NEYkTPEtzU1smmiGj2ysCnS2Y7nUz3iNnxQn\"]}},\"version\":1}",
+  "bytecode": "0x6055604b600b8282823980515f1a607314603f577f4e487b71000000000000000000000000000000000000000000000000000000005f525f60045260245ffd5b305f52607381538281f3fe730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220c97dfe560e411597f1164066816f696e1aa76692bbb5c159fe120aba3f4ef96e64736f6c63430008150033",
+  "deployedBytecode": "0x730000000000000000000000000000000000000000301460806040525f80fdfea2646970667358221220c97dfe560e411597f1164066816f696e1aa76692bbb5c159fe120aba3f4ef96e64736f6c63430008150033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "62:203:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "62:203:1:-:0;;;;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\n\r\nlibrary Types {\r\n    enum UserRole {\r\n\r\n        User //0\r\n    }\r\n\r\n\r\n    struct UserDetails {\r\n        UserRole role;\r\n        address id_;\r\n        string name;\r\n        string email;\r\n    }\r\n\r\n\r\n   \r\n}",
+  "sourcePath": "E:\\ReactJsApp\\Ransomware-Detection\\blockchain\\contracts\\Types.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/Types.sol",
+    "exportedSymbols": {
+      "Types": [
+        55
+      ]
+    },
+    "id": 56,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 42,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Types",
+        "contractDependencies": [],
+        "contractKind": "library",
+        "fullyImplemented": true,
+        "id": 55,
+        "linearizedBaseContracts": [
+          55
+        ],
+        "name": "Types",
+        "nameLocation": "70:5:1",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "Types.UserRole",
+            "id": 44,
+            "members": [
+              {
+                "id": 43,
+                "name": "User",
+                "nameLocation": "110:4:1",
+                "nodeType": "EnumValue",
+                "src": "110:4:1"
+              }
+            ],
+            "name": "UserRole",
+            "nameLocation": "88:8:1",
+            "nodeType": "EnumDefinition",
+            "src": "83:42:1"
+          },
+          {
+            "canonicalName": "Types.UserDetails",
+            "id": 54,
+            "members": [
+              {
+                "constant": false,
+                "id": 47,
+                "mutability": "mutable",
+                "name": "role",
+                "nameLocation": "174:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "165:13:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_UserRole_$44",
+                  "typeString": "enum Types.UserRole"
+                },
+                "typeName": {
+                  "id": 46,
+                  "nodeType": "UserDefinedTypeName",
+                  "pathNode": {
+                    "id": 45,
+                    "name": "UserRole",
+                    "nameLocations": [
+                      "165:8:1"
+                    ],
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 44,
+                    "src": "165:8:1"
+                  },
+                  "referencedDeclaration": 44,
+                  "src": "165:8:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_UserRole_$44",
+                    "typeString": "enum Types.UserRole"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 49,
+                "mutability": "mutable",
+                "name": "id_",
+                "nameLocation": "197:3:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "189:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 48,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "189:7:1",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 51,
+                "mutability": "mutable",
+                "name": "name",
+                "nameLocation": "218:4:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "211:11:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 50,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "211:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 53,
+                "mutability": "mutable",
+                "name": "email",
+                "nameLocation": "240:5:1",
+                "nodeType": "VariableDeclaration",
+                "scope": 54,
+                "src": "233:12:1",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 52,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "233:6:1",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "UserDetails",
+            "nameLocation": "142:11:1",
+            "nodeType": "StructDefinition",
+            "scope": 55,
+            "src": "135:118:1",
+            "visibility": "public"
+          }
+        ],
+        "scope": 56,
+        "src": "62:203:1",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "33:232:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2023-11-23T20:49:54.359Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
